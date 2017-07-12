@@ -407,6 +407,32 @@ interface接口
                 a[1]=new int[4];
                 a[3]=new int[3];
                 int b[][]=new int[3][5];
+常用类
+    字符串相关类
+        String
+            java.lang.String类代表不可变的字符序列
+            String类的常见构造方法
+                String(String original)
+                    创建一个String对象为original的拷贝
+                String(char[] value)
+                    用一个字符数组创建一个String对象
+                String(char[] value,int  offset,int count)
+                    用一个字符数组从offset项开始的count个字符序列创建一个String对象
+
+                public char charAt(int index)
+                    返回字符串中第index个字符
+                public int length()
+                    返回字符串的长度
+                public int indexOf(String str)
+                    返回字符串中出现str的第一个位置
+                public int indexOf(Stirng str,int fromIndex)
+                    返回字符串中从fromIndex开始出现str的第一个位置
+                public boolean equalsIgnoreCase(String another)
+                    比较字符串与another是否一样（忽略大小写）
+                public String replace(char oldChar,char newChar)
+                    在字符串中用newChar字符替换oldChar字符
+
+                。。。。。
 
 
  	 	

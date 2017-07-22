@@ -434,8 +434,9 @@ interface接口
 
                 。。。。。
 
-
- 	 	
+            valueOf()
+ 	 	        System.out.println(String.valueOf(dog));//等同于dog的toString方法
+                System.out.println(dog.toString());
  	 	
  	 	
  	 	

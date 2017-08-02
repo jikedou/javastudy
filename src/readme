@@ -468,8 +468,18 @@ interface接口
 	 		切记，不能眼高手低！！！
 	 		========================================
 			 
-			 
-			 
+		Math类
+		    java.lang.Math提供了一系列静态方法用于科学计算
+		    其方法的参数和返回值类型一般为double型
+
+		    	 abs 绝对值
+		    	 sqrt 平方根
+		    	 pow(double a ,double b) a的b次幂
+		    	 log 自然对数
+		    	 max(double a,double b)	 a、b中的较大值
+		    	 min(double a,double b)	 a、b中的较小值
+                 random() 返回0.0到1.0的随机数
+                 round(double d)四舍五入
 			 
 			 
 			 

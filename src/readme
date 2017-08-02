@@ -437,7 +437,39 @@ interface接口
             valueOf()
  	 	        System.out.println(String.valueOf(dog));//等同于dog的toString方法
                 System.out.println(dog.toString());
- 	 	
- 	 	
- 	 	
-   
+                
+			 判断字符串中的英文大小写个数
+			 	可以遍历字符串中的每一个字符
+				然后做判断，每个字符与'a''z''A''Z'作比较，可以然后确认是大写就++，小写就++，每种情况统计个数
+		
+		
+		StringBuffer 缓冲区
+			StringBuffer可变的字符序列，而String代表不可变的字符序列
+			StringBuffer与String类似，但是StringBuffer可以对其字符串进行改变
+			StringBuffer类常见的构造方法
+				StringBuffer()
+					创建一个不包含字符序列的“空”的StringBuffer对象
+				StringBuffer(String str)
+					创建一个StringBuffer对象，包含与String对象str相同的字符序列
+				sb.append();//将 某某参数（各种类型的参数）的字符串表示形式追加到序列。
+				sb.reverse();// 倒序排列,后返回
+				sb.delete(int start, int end);//移除此序列的子字符串中的字符
+				sb.insert(int offset, boolean b)//将 boolean参数（也有其他类型的）的字符串表示形式插入此序列中。
+				
+		基础数据类型包装类		
+			包装类（如Integer，Double等）这些类封装了一个相应的基本数据类型数值，并为其提供了一系列操作
+			以java.lang.Integer类为例；构造方法：
+				Integer(int value)
+				Integer(String s)
+				
+			========================================	
+			总结：写程序有时候不能一气呵成，但是不能一句不写
+	 		要想到哪里写到哪里，编写边改， 编写边调试
+	 		切记，不能眼高手低！！！
+	 		========================================
+			 
+			 
+			 
+			 
+			 
+			 

@@ -480,6 +480,28 @@ interface接口
 		    	 min(double a,double b)	 a、b中的较小值
                  random() 返回0.0到1.0的随机数
                  round(double d)四舍五入
-			 
-			 
+		File类
+			常见构造方法
+			    public File(String pathname)
+			        以pathname为路径创建File对象，如果pathname是相对路径，则默认的当前路径在系统属性user.dir中存储
+			    public File(String parent,String child)
+			        以parent为父路径，child为子路径创建File对象
+                File的静态属性String separator存储了当前系统的路径分隔符
+			通过File对象可以访问文件的属性
+			    public boolean canRead(),canWrite(),exists(),isDirectory(),isFile(),isHidden()
+			    public long lastModified(),length()
+			    public String getName(),getPath()
+            通过File对象创建空文件或目录（在该对象所指的文件或目录不存在情况下）
+                public boolean createNewFile() throws IOException  //创建新文件
+                public boolean delete()
+                public boolean mkdir()  //创建新文件夹
+                public boolean mkdirs()  //创建新文件夹s
+            遍历文件
+                String pathname = "e:/game";
+                File file = new File(pathname);
+                String[] list = file.list();
+                System.out.println("file.list()-------" + list[1]);//我的世界
+                File[] files = file.listFiles();
+                System.out.println("file.listFiles()-------" + files[1]);//e:\game\我的世界
+
 			 

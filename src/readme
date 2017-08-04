@@ -496,6 +496,7 @@ interface接口
                 public boolean delete()
                 public boolean mkdir()  //创建新文件夹
                 public boolean mkdirs()  //创建新文件夹s
+
             遍历文件
                 String pathname = "e:/game";
                 File file = new File(pathname);
@@ -503,5 +504,31 @@ interface接口
                 System.out.println("file.list()-------" + list[1]);//我的世界
                 File[] files = file.listFiles();
                 System.out.println("file.listFiles()-------" + files[1]);//e:\game\我的世界
+        Enum枚举类型
+            ------只能够取特定值中的一个------
+            使用enum关键字
+            是java.lang.Enum类型
 
-			 
+=================================================================
+
+容器
+    概念1136-----1个图  1个类  3个知识点  6个接口
+        Collection(接口)，一个一个往里装东西
+            Set(接口)，数据对象没有顺序，不可重复
+                HashSet
+            List(接口)，数据对象有顺序，可以重复
+                LinkedList
+                ArrayList
+        Map(接口)，一对一对往里装东西，定义了存储"key-value"映射对的方法
+            HashMap
+
+            Collection接口中所定义的方法
+                int size()
+                boolean isEmpty()
+                void clear()
+                boolean contains(Object o)
+
+                父类的引用指向子类对象，不能访问子类特有的东西
+
+
+

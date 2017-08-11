@@ -530,5 +530,19 @@ interface接口
 
                 父类的引用指向子类对象，不能访问子类特有的东西
 
+        Collection接口中定义的方法
+            int size();
+            boolean isEmpty();
+            void clear();//从此集合中删除所有元素
+            boolean contains (Object o);//如果此集合包含指定的元素，则返回 true
+            boolean add(Object o);
+            boolean remove(Object o);
+            Iterator iterator();
+            boolean containsAll(Collection c);//如果此集合包含指定 集合中的所有元素，则返回true。
+            boolean addAll(Contain c);
+            boolean removeAll(Collection c);
+            boolean retainAll(Collection c);
+            Object[] toArray();
+
 
 

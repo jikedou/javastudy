@@ -541,8 +541,50 @@ interface接口
             boolean containsAll(Collection c);//如果此集合包含指定 集合中的所有元素，则返回true。
             boolean addAll(Contain c);
             boolean removeAll(Collection c);
-            boolean retainAll(Collection c);
+            boolean retainAll(Collection c);//仅保留此集合中包含在指定集合中的元素
             Object[] toArray();
 
+            容器类对象在调用remove contains等方法时需要比较对象是否相等，这会涉及到对象类型的equals方法和hashCode方法；对于自定义的类型，需要重写equals和hashCode方法以实现自定义的对象相等原则
+                注意：相等的对象应该具有相等的hashCode
+            重写equals方法必须重写hashCode方法
+
+        Iterator接口
+            所有实现Collection接口的容器类都有一个iterator方法用以返回一个实现了Iterator接口的对象
+            Iterator对象称作迭代器，用以方便的实现对容器内元素的遍历操作
+            Iterator接口定义了如下方法：
+                boolean hasNext();//判断右边右边是否有元素
+                Object next();//返回游标右边的元素并将游标移动到下一个位置
+                void remove();//删除游标左边的元素，在执行完next之后，该操作只能执行一次
+
+        增强for循环
+            1.5以后才有
+                int[] arr1 = {6, 5, 4, 3, 2, 1};
+                for (int i : arr1) {
+                    System.out.println(i);
+                }
+            对于遍历array或者Collection的时候非常方便
+            缺陷：
+                数组：不能方便的访问下标值
+                集合：与使用Iterator相比，不能方便的删除集合中的内容
+                    在内部也是调用Iterator
+            总结：除了简单遍历并读出其中的内容外，不建议使用增强for
+
+        Set
+            Set接口是Collection的子接口，Set接口没有提供额外的方法，但实现Set接口的容器类中的元素是没有顺序的，而且不可以重复
+            Set容器可以与数学中“集合”的概念相对应
+            提供的Set容器类有HashSet、TreeSet等
+
+        List
+            List接口是Collection的子接口，实现List接口的容器类中的元素是有顺序的，而且可以重复
+            List容器中的元素都对应一个整数型的序号记载其在容器中的位置，可以根据序号存取容器中的元素
+            提供的List容器有ArrayList(底层以数组实现) LikedList(底层以链表实现)等
+                get(int index);
+                set(int index,Object o);//将下标为index的值返回，并将下标为index的值设置为o
+                add(int index,Object o);
+                remove(int index);//删除下标为index的值
+                indexOf(object o);
+                lastIndexOf(Object o);
+
+        Collections  是一个类
 
 

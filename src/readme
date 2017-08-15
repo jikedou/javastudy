@@ -585,6 +585,14 @@ interface接口
                 indexOf(object o);
                 lastIndexOf(Object o);
 
+            List常用算法
+                sort(List); //对list的元素进行排序
+                shuffle(list);//对list的元素进行随机排序
+                reverse(List);//对list的元素进行逆序排序
+                fill(List，Object);//用一个特定的对象重写整个List容器
+                copy(List dest,List src);//将src list容器内容拷贝到dest list容器中
+                int binarySearch(List ,o);//对于顺序的List容器，采用折半查找方法查找特定对象
+
         Collections  是一个类
 
 
